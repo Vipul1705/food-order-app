@@ -10,7 +10,7 @@ const Cart = (props) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [didSubmit, setDidSubmit] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
-  const totalAmount = `$${ctx.totalAmount.toFixed(2)}`;
+  const totalAmount = `₹${ctx.totalAmount.toFixed(2)}`;
   const hasItems = ctx.items.length > 0;
   const cartItemAddHandler = (item) => {
     ctx.addItem({ ...item, amount: 1 });
